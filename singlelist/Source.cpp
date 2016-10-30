@@ -3,8 +3,6 @@
 
 using namespace std;
 
-void main();
-
 struct node {
 	int data;
 	node *next;
