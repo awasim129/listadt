@@ -120,6 +120,7 @@ hell:
 	}
 
 	else if (choice == 2) {
+		system("cls");
 		cout << "Enter number to be inserted into LinkedList: ";
 		cin >> n;
 		insertatStart(n);
@@ -127,6 +128,7 @@ hell:
 	}
 
 	else if (choice == 3) {
+		system("cls");
 		int pos;
 		cout << "Enter number to be inserted into LinkedList: ";
 		cin >> n;
@@ -137,6 +139,7 @@ hell:
 	}
 
 	else if (choice==4) {
+		system("cls");
 		Display();
 		goto hell;
 	}
