@@ -58,17 +58,22 @@ void insertatPos(int pos, int n) {
 	int sentinel = 1;
 	temp = createNode();
 	(*temp).data = n;
-	
-	t = START;
-	
-	while (sentinel < pos -1) {
-		sentinel++;
-		t = (*t).next;	
+
+	if (START == NULL) {
+		START = temp;
 	}
-	swap = t;
-	swap = (*t).next;
-	(*t).next = temp;
-	(*temp).next = swap;
+	else {
+		t = START;
+
+		while (sentinel < pos - 1) {
+			sentinel++;
+			t = (*t).next;
+		}
+//			swap = t;
+		swap = (*t).next;
+		(*t).next = temp;
+		(*temp).next = swap;
+	}
 }
 
 void Display() {
